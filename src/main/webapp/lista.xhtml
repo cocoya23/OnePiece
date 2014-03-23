@@ -13,7 +13,7 @@
             <pm:content>
                 <p:dataList value="#{lista.archivos}" var="archivo" >
                     <f:attribute name="filter" value="true" />
-                    <h:outputLink value="#{archivo.rutaVisor}">#{archivo.nombre}</h:outputLink>
+                    <h:outputLink value="/visor/#{lista.tipo}/#{archivo.nombre}">#{archivo.nombre}</h:outputLink>
                 </p:dataList>
             </pm:content>
         </pm:view>
