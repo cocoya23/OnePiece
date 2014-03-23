@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<f:view xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:p="http://primefaces.org/ui"
+        xmlns:pm="http://primefaces.org/mobile"
+        contentType="text/html">
+    <pm:page title="One Piece">
+        <pm:view id="main">
+            <pm:header title="#{visor.capitulo}" />
+            <pm:content>
+                <video width="100%" height="100%" controls="true">
+                    <source src="#{visor.rutaVideo}" type="video/mp4"/>
+                </video>
+            </pm:content>
+        </pm:view>
+    </pm:page>
+</f:view>
